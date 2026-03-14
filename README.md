@@ -1,7 +1,7 @@
-#CodeCraftHub Learning Management System
+# CodeCraftHub Learning Management System
 A simple personalized learning platform for developers to track courses they want to learn.
 
-##Features
+## Features
 -Add courses with target completion dates
 -View all your courses
 -Update course information and status
@@ -9,20 +9,20 @@ A simple personalized learning platform for developers to track courses they wan
 -JSON file-based storage (no database needed)
 -RESTful API design
 -Proper error handling
-##Installation
+## Installation
 -Clone or download the project
 -Install Python dependencies:
 
 `pip install -r requirements.txt`
 
-##Running the Application
+## Running the Application
 Start the Flask server:
 `python app.py`
 
 The API will be available at http://localhost:5000
 
-##API Endpoints
-###1. Add a Course
+## API Endpoints
+### 1. Add a Course
 POST /api/courses
 
 Request body:
@@ -36,13 +36,13 @@ json
   "status": "Not Started"
 }
 `
-###2. Get All Courses
+### 2. Get All Courses
 GET /api/courses
 
-###3. Get Specific Course
+### 3. Get Specific Course
 GET /api/courses/<id>
 
-###4. Update Course
+### 4. Update Course
 PUT /api/courses/<id>
 
 Request body (all fields optional):
@@ -51,13 +51,13 @@ Request body (all fields optional):
   "status": "In Progress"
 }`
 
-###5. Delete Course
+### 5. Delete Course
 DELETE /api/courses/<id>
 
-##Testing
+## Testing
 Use the provided curl commands or import the Postman collection to test all endpoints.
 
-##Troubleshooting
+## Troubleshooting
 **Problem**: "Module not found: flask"
 **Solution**: Run pip install -r requirements.txt
 
