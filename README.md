@@ -68,6 +68,7 @@ Project Structure
 
 `
 codecrafthub/
+
 ├── app.py           # Main Flask application
 
 ├── courses.json     # Data storage (auto-created)
